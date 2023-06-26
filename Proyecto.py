@@ -12,14 +12,6 @@ def registrar():
     if not nombre:
         print("Es obligatorio llenar este espacio. Vuelve a intentarlo")
         registrar()
-    correo= input ("Ingrese su correo:  ")
-    if not correo:
-        print("Es obligatorio llenar este espacio. Vuelve a intentarlo")
-        registrar()
-    telefono= input ("Ingrese su número de teléfono: ")
-    if not telefono:
-        print("Es obligatorio llenar este espacio. Vuelve a intentarlo")
-        registrar()
     usuario = input ("Ingrese un nombre de usuario: ")
     if not usuario:
         print("Es obligatorio llenar este espacio. Vuelve a intentarlo")
@@ -53,8 +45,6 @@ def registrar():
         print("Cliente registrado correctamente")
 
     Registro = {"Nombre":nombre,
-                 "Correo":correo,
-                 "Telefono": telefono,
                  "Usuario": usuario,
                  "Contraseña": contraseña,
                  "Rol": rol, 
